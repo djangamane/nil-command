@@ -1,0 +1,14 @@
+{
+  "name": "NIL Command",
+  "short_name": "NIL Command",
+  "icons": [
+    {
+      "src": "favicon_nil.png",
+      "sizes": "1024x1024",
+      "type": "image/png"
+    }
+  ],
+  "theme_color": "#0A1931",
+  "background_color": "#FFFFFF",
+  "display": "standalone"
+}
