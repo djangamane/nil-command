@@ -1,0 +1,337 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NIL Command - Due Diligence Intelligence for NIL Investors</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:wght@400;600;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+  <script src="https://cdn.jsdelivr.net/npm/@tailwindcss/browser@4"></script>
+  <style>
+    :root {
+      color-scheme: light;
+      --nc-navy: #0A1931;
+      --nc-gold: #C0A878;
+      --nc-ivory: #f7f5f1;
+    }
+    body {
+      background: #ffffff;
+      color: var(--nc-navy);
+      font-family: "IBM Plex Sans", "Helvetica Neue", Arial, sans-serif;
+    }
+    h1, h2, .serif-title {
+      font-family: "Fraunces", "Times New Roman", serif;
+    }
+    .text-slate-900 {
+      color: var(--nc-navy);
+    }
+    .text-slate-800 {
+      color: #1f2b43;
+    }
+    .text-slate-700 {
+      color: #22324c;
+    }
+    .text-slate-600 {
+      color: #374760;
+    }
+    .text-slate-500 {
+      color: #5b6a83;
+    }
+    .text-slate-400 {
+      color: #7e8ca3;
+    }
+    .bg-slate-50 {
+      background: var(--nc-ivory);
+    }
+    .bg-slate-900 {
+      background: var(--nc-navy);
+    }
+    .hover\:bg-slate-800:hover {
+      background: #081224;
+    }
+    .border-slate-200 {
+      border-color: #e5e0d4;
+    }
+    .border-slate-300 {
+      border-color: #d9d1c1;
+    }
+    .stat-number {
+      letter-spacing: 0.04em;
+    }
+    .memo-shadow {
+      box-shadow: 0 18px 45px rgba(10,25,49,0.12);
+    }
+    .accent-underline::after {
+      content: "";
+      position: absolute;
+      left: 0;
+      bottom: -0.2rem;
+      width: 2.5rem;
+      height: 2px;
+      background: linear-gradient(to right, var(--nc-gold), #d9c08c);
+    }
+    .hero-badge {
+      letter-spacing: 0.16em;
+    }
+    .secure-tag::before {
+      content: "";
+      display: inline-block;
+      width: 6px;
+      height: 6px;
+      border-radius: 999px;
+      background: var(--nc-gold);
+      margin-right: 6px;
+    }
+    .memo-content {
+      position: relative;
+      z-index: 1;
+    }
+    .pulse-dot {
+      box-shadow: 0 0 0 0 rgba(192,168,120,0.7);
+      animation: pulse-dot 2.2s infinite;
+    }
+    @keyframes pulse-dot {
+      0% { box-shadow: 0 0 0 0 rgba(192,168,120,0.6); }
+      70% { box-shadow: 0 0 0 16px rgba(192,168,120,0); }
+      100% { box-shadow: 0 0 0 0 rgba(192,168,120,0); }
+    }
+  </style>
+</head>
+<body class="min-h-screen text-slate-900 antialiased">
+  <main class="min-h-screen flex flex-col">
+    <header class="border-b border-slate-200 bg-white/90 backdrop-blur">
+      <div class="mx-auto flex max-w-5xl items-center justify-between px-4 py-4">
+        <div class="flex items-center gap-3">
+          <div class="flex h-9 w-9 items-center justify-center rounded border border-slate-200 bg-slate-900 text-xs font-semibold tracking-[0.18em] text-white">
+            NC
+          </div>
+          <div>
+            <p class="text-sm font-semibold tracking-[0.22em] text-slate-900 uppercase">NIL Command</p>
+            <p class="text-xs text-slate-500">Due Diligence Intelligence for NIL Investors</p>
+          </div>
+        </div>
+        <div class="hidden text-[11px] font-mono uppercase text-slate-500 sm:flex sm:flex-col sm:items-end">
+          <span class="secure-tag text-xs">Secure Client Portal</span>
+          <span class="mt-1 text-slate-400">Proprietary assessment protocol</span>
+        </div>
+      </div>
+    </header>
+
+    <section class="flex-1 bg-white">
+      <div class="mx-auto grid max-w-5xl grid-cols-1 gap-10 px-4 py-10 lg:grid-cols-[minmax(0,1.1fr)_minmax(0,1fr)] lg:py-16">
+        <!-- Left: Copy + credibility + CTA -->
+        <div class="space-y-8">
+          <div class="space-y-4">
+            <p class="hero-badge text-[11px] font-mono uppercase text-slate-500">NIL Investment Risk - Independent Intelligence</p>
+            <h1 class="text-balance text-3xl font-semibold tracking-tight text-slate-900 sm:text-4xl lg:text-[2.65rem]">
+              We vet $1M+ NIL investments so you don't end up with a $1.2M player in the Transfer Portal.
+            </h1>
+            <p class="max-w-xl text-sm leading-relaxed text-slate-600 sm:text-[15px]">
+              NIL Command produces litigation-grade investment memos on high-visibility college athletes. We speak the language of General
+              Counsels, compliance officers, and boards - so your collectives can deploy capital without surprises.
+            </p>
+          </div>
+
+          <!-- Credibility bar -->
+          <div class="grid gap-4 rounded-xl border border-slate-200 bg-slate-50 px-4 py-4 text-sm sm:grid-cols-3">
+            <div>
+              <p class="text-[11px] font-mono uppercase tracking-[0.16em] text-slate-500">Capital Assessed</p>
+              <p class="stat-number mt-1 text-xl font-semibold text-slate-900">$25,000 per litigation-grade memo</p>
+            </div>
+            <div>
+              <p class="text-[11px] font-mono uppercase tracking-[0.16em] text-slate-500">Audit Readiness</p>
+              <p class="stat-number mt-1 text-xl font-semibold text-[#C0A878]">Memo protocol</p>
+              <p class="mt-1 text-xs text-slate-500">Designed for IRS Form 990 operational test compliance.</p>
+            </div>
+            <div>
+              <p class="text-[11px] font-mono uppercase tracking-[0.16em] text-slate-500">Decision-Makers Briefed</p>
+              <p class="stat-number mt-1 text-xl font-semibold text-slate-900">Select programs</p>
+              <p class="mt-1 text-xs text-slate-500">Power Five and emerging collectives by partner referral only.</p>
+            </div>
+          </div>
+
+          <!-- Secondary credibility line -->
+          <div class="flex flex-wrap items-center gap-x-6 gap-y-2 text-xs text-slate-500">
+            <span>Built for collectives, law firms, and family offices.</span>
+          </div>
+
+          <!-- Primary CTA -->
+          <div class="pt-2">
+            <button id="scrollToForm" class="inline-flex items-center gap-2 rounded-md bg-slate-900 px-5 py-2.5 text-xs font-semibold uppercase tracking-[0.18em] text-white shadow-sm hover:bg-slate-800">
+              Schedule a confidential briefing
+              <span class="h-1.5 w-1.5 rounded-full bg-[#C0A878] pulse-dot"></span>
+            </button>
+            <p class="mt-2 text-[11px] text-slate-500">We run a white-glove intake process. Briefings are limited and invite-only.</p>
+          </div>
+        </div>
+
+        <!-- Right: Sample memo preview + placeholder attachments -->
+        <div class="space-y-6">
+          <!-- Memo preview card -->
+          <div class="relative rounded-xl border border-slate-200 bg-white memo-shadow">
+            <div class="flex items-center justify-between border-b border-slate-200 px-4 py-2.5">
+              <div class="text-xs font-mono uppercase tracking-[0.16em] text-slate-500">
+                Confidential Exhibit - Sample
+              </div>
+              <a
+                id="downloadSample"
+                href="nil-command.pdf"
+                class="flex items-center gap-1 rounded-full border border-slate-200 bg-slate-50 px-3 py-1.5 text-[11px] font-medium text-slate-700 hover:bg-slate-50"
+                target="_blank"
+                rel="noopener"
+                download
+              >
+                Download sample 
+              </a>
+            </div>
+
+            <div class="relative px-5 py-4">
+              <div class="memo-content">
+                <div class="flex items-center justify-between text-xs text-slate-500">
+                  <span>CONFIDENTIAL</span>
+                  <span>NIL Command Investment Assessment</span>
+                </div>
+
+                <div class="mt-5 space-y-1.5 text-sm">
+                  <p class="text-[13px] font-medium tracking-wide text-slate-900">Target: Caleb Holt (2026)</p>
+                  <p class="text-[13px] text-slate-700">Mercenary Score: <span class="font-semibold">8.2 / 10</span></p>
+                  <p class="text-[13px] text-slate-700">Verdict: <span class="font-semibold text-emerald-700">GREEN</span> <span class="text-slate-500">(Efficient Asset)</span></p>
+                </div>
+
+                <div class="mt-5 grid gap-3 text-[11px] text-slate-600 sm:grid-cols-2">
+                  <div>
+                    <p class="mb-1 font-semibold text-slate-800">Included in full memo:</p>
+                    <ul class="space-y-1 list-disc pl-4">
+                      <li>Contract & tax exposure analysis</li>
+                      <li>Transfer portal and commitment history</li>
+                      <li>Locker room and staff reference synthesis</li>
+                      <li>Social & brand risk summary (redacted)</li>
+                    </ul>
+                  </div>
+                  <div>
+                    <p class="mb-1 font-semibold text-slate-800">Key outcomes:</p>
+                    <ul class="space-y-1 list-disc pl-4">
+                      <li>Average ROI improvement: <span class="font-medium text-slate-900">+18%</span></li>
+                      <li>12,402 players analyzed in current dataset</li>
+                      <li>Standardized risk language for boards</li>
+                    </ul>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </div>
+
+          <!-- Simple metrics strip -->
+          <div class="rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-[11px] text-slate-600">
+            <div class="flex flex-wrap items-center gap-x-5 gap-y-1">
+              <span class="font-mono uppercase tracking-[0.14em] text-slate-500">Baseline Vetting</span>
+              <span class="h-3 w-px bg-slate-300 hidden sm:inline-block"></span>
+              <span>The attached Caleb Holt memo was generated without institutional philosophy input. Imagine this precision tuned to your program's DNA.</span>
+            </div>
+          </div>
+          <div class="rounded-lg border border-slate-200 bg-slate-50 px-4 py-3 text-[11px] text-slate-600">
+            <div class="flex flex-wrap items-center gap-x-5 gap-y-1">
+              <span class="font-mono uppercase tracking-[0.14em] text-slate-500">NIL Command in one line:</span>
+              <span class="h-3 w-px bg-slate-300 hidden sm:inline-block"></span>
+              <span>We are not a scouting service. We are a due diligence firm. We do not advise on eligibility. We advise on investment risk.</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Confidential access section -->
+    <section id="briefing-section" class="border-t border-slate-200 bg-white">
+      <div class="mx-auto max-w-5xl px-4 py-12 lg:py-16">
+        <div class="flex items-center gap-3 text-[11px] font-mono uppercase tracking-[0.2em] text-slate-500">
+          <span>Confidential Access</span>
+          <span class="h-px flex-1 bg-[#e5e0d4]"></span>
+        </div>
+
+        <div class="mt-6 grid gap-10 lg:grid-cols-[minmax(0,1.05fr)_minmax(0,1fr)]">
+          <div class="space-y-6">
+            <div class="space-y-3">
+              <h2 class="serif-title text-2xl font-semibold text-slate-900 sm:text-3xl">Schedule a Confidential Briefing</h2>
+              <p class="text-sm text-slate-600">
+                NIL Command delivers litigation-grade NIL diligence for collectives, general counsel, and family offices. We begin with a
+                15-minute confidential briefing to confirm fit, scope, and timing.
+              </p>
+            </div>
+
+            <div class="rounded-xl border border-slate-200 bg-slate-50 px-5 py-4">
+              <p class="text-[11px] font-mono uppercase tracking-[0.16em] text-slate-500">What to expect</p>
+              <ul class="mt-3 space-y-2 text-sm text-slate-700 list-disc pl-4">
+                <li>Briefing limited to 3 slots per week.</li>
+                <li>Pre-call form: Name, Title, Organization, Referral, Top NIL target.</li>
+                <li>NDA available immediately after qualification.</li>
+                <li>Redacted memo delivery via DocSend, tracked and watermarked.</li>
+              </ul>
+            </div>
+
+            <div class="rounded-xl border border-slate-200 bg-white px-5 py-4">
+              <p class="text-[11px] font-mono uppercase tracking-[0.16em] text-slate-500">Who this is for</p>
+              <p class="mt-2 text-sm text-slate-600">
+                Collectives, law firms, athletic departments, and private investors deploying six-figure NIL capital who require
+                board-ready risk language and defensible diligence.
+              </p>
+            </div>
+          </div>
+
+          <div class="space-y-6">
+            <div class="rounded-xl border border-slate-200 bg-white px-5 py-5">
+              <div class="flex items-start justify-between gap-3">
+                <div>
+                  <p class="text-[11px] font-mono uppercase tracking-[0.16em] text-slate-500">Primary Access</p>
+                  <h3 class="mt-2 text-lg font-semibold text-slate-900">Schedule a Confidential Briefing</h3>
+                  <p class="mt-2 text-sm text-slate-600">
+                    Select one of the limited weekly slots and submit your pre-brief details. A member of our team will confirm within
+                    24 hours.
+                  </p>
+                </div>
+                <span class="rounded-full border border-slate-200 bg-slate-50 px-3 py-1 text-[11px] font-semibold uppercase tracking-[0.16em] text-slate-700">Calendly</span>
+              </div>
+              <a
+                class="mt-5 inline-flex w-full items-center justify-center rounded-md bg-slate-900 px-4 py-3 text-[11px] font-semibold uppercase tracking-[0.2em] text-white hover:bg-slate-800"
+                href="https://calendly.com/nilcommand/briefing"
+                target="_blank"
+                rel="noopener"
+              >
+                Schedule Confidential Briefing
+              </a>
+            </div>
+
+            <div class="rounded-xl border border-dashed border-slate-200 bg-slate-50 px-5 py-4">
+              <p class="text-[11px] font-mono uppercase tracking-[0.16em] text-slate-500">Confidentiality</p>
+              <p class="mt-2 text-xs text-slate-600">
+                We do not market or distribute client inquiries. All briefings are confidential and handled by senior leadership.
+              </p>
+              <div class="mt-4 grid gap-2 text-[12px] text-slate-700">
+                <span>Preparation includes: program review, prior NIL deal context, and risk profile setup.</span>
+                <span>Follow-up: DocSend memo access, tracked and watermarked.</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer class="border-t border-slate-200 bg-white py-4 text-[11px] text-slate-500">
+      <div class="mx-auto flex max-w-5xl flex-col gap-2 px-4 sm:flex-row sm:items-center sm:justify-between">
+        <p>NIL Command is a due diligence firm for NIL investors and collectives. We do not provide scouting services or eligibility opinions.</p>
+      </div>
+    </footer>
+  </main>
+
+  <script>
+    const scrollToFormBtn = document.getElementById('scrollToForm');
+    const briefingSection = document.getElementById('briefing-section');
+    if (scrollToFormBtn && briefingSection) {
+      scrollToFormBtn.addEventListener('click', () => {
+        briefingSection.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      });
+    }
+  </script>
+</body>
+</html>
